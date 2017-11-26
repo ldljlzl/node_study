@@ -1,0 +1,10 @@
+﻿1.
+array.map(function(url,index){
+    console.log(index)
+    //里面是异步的，index不为1,2,3,4，为乱序
+})
+
+2.HTML中trim()函数去除两端的空格，换行等
+
+
+3.map(function(index,elem){})中，index，elem两者都不可缺少
