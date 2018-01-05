@@ -1,4 +1,4 @@
-﻿1.
+1.
 array.map(function(url,index){
     console.log(index)
     //里面是异步的，index不为1,2,3,4，为乱序
@@ -8,3 +8,16 @@ array.map(function(url,index){
 
 
 3.map(function(index,elem){})中，index，elem两者都不可缺少
+
+4.循环异步可以嵌套 
+let arr=[]
+function func(i){
+    arr.push(...)
+    if(i<arr.length){
+        func(i++)
+    }else{
+        console.log(arr)
+        return
+    }
+}
+func(...)
